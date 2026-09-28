@@ -53,7 +53,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <p className="mb-4 font-display italic text-lg text-rose-600">Hi, I&apos;m</p>
+          <p className="mb-4 font-display italic text-lg text-rose-600">
+            Hi, I&apos;m
+          </p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05] text-balance">
             Ananya Gupta
           </h1>
@@ -111,7 +113,13 @@ export default function Hero() {
           >
             {/* glowing blob */}
             <motion.div
-              animate={{ borderRadius: ["60% 40% 55% 45%/55% 45% 60% 40%", "45% 55% 40% 60%/50% 55% 45% 50%", "60% 40% 55% 45%/55% 45% 60% 40%"] }}
+              animate={{
+                borderRadius: [
+                  "60% 40% 55% 45%/55% 45% 60% 40%",
+                  "45% 55% 40% 60%/50% 55% 45% 50%",
+                  "60% 40% 55% 45%/55% 45% 60% 40%",
+                ],
+              }}
               transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
               className="absolute inset-0 bg-gradient-to-br from-rose-300 via-peach-300 to-lavender-300 blur-[2px] opacity-80"
             />
@@ -127,12 +135,19 @@ export default function Hero() {
             >
               <motion.div
                 animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="h-full w-full"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop"
+                  src="/photo/photo.jpeg"
                   alt="Ananya Gupta"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </motion.div>
@@ -149,13 +164,20 @@ export default function Hero() {
                 <HiOutlineCodeBracket size={16} />
               </div>
               <p className="text-sm font-semibold">Full Stack Developer</p>
-              <p className="text-xs text-plum-800/60">Laravel · React · Next.js</p>
+              <p className="text-xs text-plum-800/60">
+                Laravel · React · Next.js
+              </p>
             </motion.div>
 
             {/* floating badge: Currently Pursuing MCA */}
             <motion.div
               animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+              transition={{
+                duration: 4.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.6,
+              }}
               whileHover={{ scale: 1.05 }}
               className="glass-strong absolute -left-6 bottom-6 flex items-center gap-2 rounded-2xl px-4 py-3 shadow-soft sm:-left-12"
             >

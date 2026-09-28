@@ -7,15 +7,18 @@ import {
   HiOutlineMapPin,
   HiOutlineEnvelope,
 } from "react-icons/hi2";
-import { FiPlay } from "react-icons/fi";
+import { FiFileText, FiDownload, FiEye } from "react-icons/fi";
 import MagneticButton from "./MagneticButton";
-import Image from "next/image";
 
 const facts = [
   { icon: HiOutlineUser, label: "Name", value: "Ananya Gupta" },
   { icon: HiOutlineAcademicCap, label: "Qualification", value: "Pursuing MCA" },
   { icon: HiOutlineMapPin, label: "Location", value: "India" },
-  { icon: HiOutlineEnvelope, label: "Email", value: "ananyagupta@gmail.com" },
+  {
+    icon: HiOutlineEnvelope,
+    label: "Email",
+    value: "ananyagupta18032005@gmail.com",
+  },
 ];
 
 const fadeUp = {
@@ -80,7 +83,7 @@ export default function About() {
             </MagneticButton>
           </motion.div>
 
-          {/* Right: quick facts + video card */}
+          {/* Right: quick facts */}
           <div className="relative">
             <motion.div
               variants={fadeUp}
@@ -110,33 +113,45 @@ export default function About() {
               </ul>
             </motion.div>
 
-            {/* mini video/photo card */}
+            {/* resume card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, rotate: -4 }}
               whileInView={{ opacity: 1, scale: 1, rotate: -4 }}
               viewport={{ once: true }}
               whileHover={{ rotate: 0, scale: 1.05 }}
               transition={{ duration: 0.5 }}
-              data-cursor
-              className="glass-strong absolute -right-4 -bottom-10 w-40 rounded-2xl p-2 shadow-soft sm:-right-8 sm:w-48"
+              className="glass-strong absolute -right-4 -bottom-14 w-52 rounded-2xl p-4 shadow-soft sm:-right-8 sm:w-56"
             >
-              <div className="relative overflow-hidden rounded-xl">
-                <Image
-                  src="/photo/photo.jpeg"
-                  alt="A little about me"
-                  width={200}
-                  height={150}
-                  className="h-28 w-full object-cover sm:h-32"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-plum-900/20">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-rose-500 shadow-soft">
-                    <FiPlay size={14} />
-                  </span>
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-500 text-white shadow-glow">
+                  <FiFileText size={18} />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold">My Resume</p>
+                  <p className="text-[11px] text-plum-800/60">
+                    PDF · Ananya Gupta
+                  </p>
                 </div>
               </div>
-              <p className="mt-2 px-1 text-[11px] font-medium text-plum-800/70">
-                A little about me · 1:32
-              </p>
+              <div className="mt-4 flex gap-2">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-cursor
+                  className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-white/80 px-3 py-2 text-[11px] font-semibold text-plum-900 hover:bg-white"
+                >
+                  <FiEye size={12} /> View
+                </a>
+                <a
+                  href="/resume.pdf"
+                  download="Ananya-Gupta-Resume.pdf"
+                  data-cursor
+                  className="flex flex-1 items-center justify-center gap-1.5 rounded-full bg-rose-500 px-3 py-2 text-[11px] font-semibold text-white hover:bg-rose-600"
+                >
+                  <FiDownload size={12} /> Download
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>

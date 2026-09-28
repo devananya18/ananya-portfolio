@@ -1,7 +1,7 @@
 export const socials = {
-  github: "https://github.com/astrogeeksagarr",
-  linkedin: "https://linkedin.com/in/ananya-gupta",
-  email: "ananyagupta@gmail.com",
+  github: "https://github.com/devananya18",
+  linkedin: "https://www.linkedin.com/in/ananya-gupta-581b7b2bb",
+  email: "ananyagupta18032005@gmail.com",
 };
 
 export const navLinks = [
@@ -113,5 +113,11 @@ export const journey: JourneyItem[] = [
     title: "BCA",
     period: "2021 — 2024",
     description: "Completed — built a foundation in programming, databases and web development.",
+  },
+  {
+    id: "school",
+    title: "Schooling (12th & 10th)",
+    period: "Up to 2021",
+    description: "Completed schooling — where my interest in computers and problem solving began.",
   },
 ];

@@ -28,7 +28,11 @@ export default function Navbar() {
           scrolled ? "glass-strong shadow-soft" : "bg-transparent"
         }`}
       >
-        <a href="#home" data-cursor className="flex items-center gap-2 font-display text-lg font-semibold">
+        <a
+          href="#home"
+          data-cursor
+          className="flex items-center gap-2 font-display text-lg font-semibold"
+        >
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-rose-500 text-white text-sm">
             AG
           </span>
@@ -46,7 +50,11 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden md:block">
-          <MagneticButton variant="secondary" className="!py-2.5 !px-5 text-xs">
+          <MagneticButton
+            href="/resume.pdf"
+            variant="secondary"
+            className="!py-2.5 !px-5 text-xs"
+          >
             <FiDownload /> Download CV
           </MagneticButton>
         </div>

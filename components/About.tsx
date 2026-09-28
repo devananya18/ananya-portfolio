@@ -1,9 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { HiOutlineUser, HiOutlineAcademicCap, HiOutlineMapPin, HiOutlineEnvelope } from "react-icons/hi2";
+import {
+  HiOutlineUser,
+  HiOutlineAcademicCap,
+  HiOutlineMapPin,
+  HiOutlineEnvelope,
+} from "react-icons/hi2";
 import { FiPlay } from "react-icons/fi";
 import MagneticButton from "./MagneticButton";
+import Image from "next/image";
 
 const facts = [
   { icon: HiOutlineUser, label: "Name", value: "Ananya Gupta" },
@@ -58,17 +64,16 @@ export default function About() {
             className="space-y-5 text-plum-800/75 leading-relaxed"
           >
             <p>
-              I&apos;m currently pursuing my MCA and I&apos;m passionate
-              about building real-world web applications that solve practical
-              problems. I have hands-on experience developing systems like
-              Hotel Management Systems and CRM platforms using Laravel, PHP
-              and MySQL.
+              I&apos;m currently pursuing my MCA and I&apos;m passionate about
+              building real-world web applications that solve practical
+              problems. I have hands-on experience developing systems like Hotel
+              Management Systems and CRM platforms using Laravel, PHP and MySQL.
             </p>
             <p>
               I enjoy working across both backend logic and frontend design,
-              paying close attention to performance, scalability and clean
-              user experience. I&apos;m always eager to learn new
-              technologies and grow as a developer.
+              paying close attention to performance, scalability and clean user
+              experience. I&apos;m always eager to learn new technologies and
+              grow as a developer.
             </p>
             <MagneticButton variant="primary" href="#projects" className="mt-2">
               Know More
@@ -95,7 +100,9 @@ export default function About() {
                       <f.icon size={16} />
                     </span>
                     <span>
-                      <span className="block text-xs text-plum-800/50">{f.label}</span>
+                      <span className="block text-xs text-plum-800/50">
+                        {f.label}
+                      </span>
                       <span className="text-sm font-medium">{f.value}</span>
                     </span>
                   </li>
@@ -114,9 +121,11 @@ export default function About() {
               className="glass-strong absolute -right-4 -bottom-10 w-40 rounded-2xl p-2 shadow-soft sm:-right-8 sm:w-48"
             >
               <div className="relative overflow-hidden rounded-xl">
-                <img
-                  src="C:\xampp\htdocs\ananya-portfolio\photo\photo.jpeg"
+                <Image
+                  src="/photo/photo.jpeg"
                   alt="A little about me"
+                  width={200}
+                  height={150}
                   className="h-28 w-full object-cover sm:h-32"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-plum-900/20">

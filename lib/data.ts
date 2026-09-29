@@ -105,19 +105,19 @@ export const journey: JourneyItem[] = [
   {
     id: "mca",
     title: "MCA",
-    period: "2024 — 2026",
+    period: "2026 — 2028",
     description: "Currently pursuing — deepening full-stack and systems-design fundamentals.",
   },
   {
     id: "bca",
     title: "BCA",
-    period: "2021 — 2024",
+    period: "2023 — 2026",
     description: "Completed — built a foundation in programming, databases and web development.",
   },
   {
     id: "school",
     title: "Schooling (12th & 10th)",
-    period: "Up to 2021",
+    period: "Up to 2023",
     description: "Completed schooling — where my interest in computers and problem solving began.",
   },
 ];

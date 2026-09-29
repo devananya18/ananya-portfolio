@@ -47,7 +47,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <MagneticButton href="/resume.pdf" variant="secondary" className="!py-2.5 !px-5 text-xs">
-            <FiDownload /> Download CV
+            <FiDownload /> Download Resume
           </MagneticButton>
         </div>
 

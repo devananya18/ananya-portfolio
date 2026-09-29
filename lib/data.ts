@@ -25,28 +25,28 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    id: "hms",
-    title: "Hotel Management System",
-    description:
-      "A complete system for managing hotel operations — bookings, inventory, housekeeping and billing, built for real front-desk workflows.",
-    tech: ["Laravel", "PHP", "MySQL", "JavaScript"],
-    gradient: "from-rose-400 via-peach-300 to-gold-300",
-    emoji: "🏨",
-    demoUrl: "#",
-    detailsUrl: "#",
-  },
-  {
-    id: "crm",
-    title: "CRM Follow-up System",
-    description:
-      "A system to manage leads, track follow-ups and improve customer engagement with role-based access for every team member.",
-    tech: ["Laravel", "MySQL", "Bootstrap"],
-    gradient: "from-lavender-300 via-rose-300 to-lavender-100",
-    emoji: "📇",
-    demoUrl: "#",
-    detailsUrl: "#",
-  },
+  // {
+  //   id: "hms",
+  //   title: "Hotel Management System",
+  //   description:
+  //     "A complete system for managing hotel operations — bookings, inventory, housekeeping and billing, built for real front-desk workflows.",
+  //   tech: ["Laravel", "PHP", "MySQL", "JavaScript"],
+  //   gradient: "from-rose-400 via-peach-300 to-gold-300",
+  //   emoji: "🏨",
+  //   demoUrl: "#",
+  //   detailsUrl: "#",
+  // },
+  // {
+  //   id: "crm",
+  //   title: "CRM Follow-up System",
+  //   description:
+  //     "A system to manage leads, track follow-ups and improve customer engagement with role-based access for every team member.",
+  //   tech: ["Laravel", "MySQL", "Bootstrap"],
+  //   gradient: "from-lavender-300 via-rose-300 to-lavender-100",
+  //   emoji: "📇",
+  //   demoUrl: "#",
+  //   detailsUrl: "#",
+  // },
   {
     id: "multivendor-shop",
     title: "Multi-Vendor E-commerce System",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     tech: ["Python", "Flask", "SQLite", "Jinja2", "HTML/CSS"],
     gradient: "from-peach-300 via-gold-300 to-rose-400",
     emoji: "🛒",
-    demoUrl: "http://127.0.0.1:5000",
+    demoUrl: "multivendor-shop-eta.vercel.app",
     detailsUrl: "https://github.com/devananya18/multivendor-shop",
   },
 ];

@@ -48,15 +48,15 @@ export const projects: Project[] = [
     detailsUrl: "#",
   },
   {
-    id: "food-court",
-    title: "Food Court Chain Management",
+    id: "multivendor-shop",
+    title: "Multi-Vendor E-commerce System",
     description:
-      "A cloud-based concept system to manage multiple food outlets, live orders and analytics from a single dashboard.",
-    tech: ["PHP", "MySQL", "JavaScript"],
+      "A mini-Amazon with three roles: vendors add products, users shop with cart, wishlist, coupons and order tracking, and admins approve vendors and products.",
+    tech: ["Python", "Flask", "SQLite", "Jinja2", "HTML/CSS"],
     gradient: "from-peach-300 via-gold-300 to-rose-400",
-    emoji: "🍜",
-    demoUrl: "#",
-    detailsUrl: "#",
+    emoji: "🛒",
+    demoUrl: "http://127.0.0.1:5000",
+    detailsUrl: "https://github.com/devananya18/multivendor-shop",
   },
 ];
 
@@ -71,7 +71,15 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "frontend",
     title: "Frontend",
-    items: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind CSS", "React.js", "Next.js"],
+    items: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "Tailwind CSS",
+      "React.js",
+      "Next.js",
+    ],
     icon: "frontend",
   },
   {
@@ -106,18 +114,21 @@ export const journey: JourneyItem[] = [
     id: "mca",
     title: "MCA",
     period: "2026 — 2028",
-    description: "Currently pursuing — deepening full-stack and systems-design fundamentals.",
+    description:
+      "Currently pursuing — deepening full-stack and systems-design fundamentals.",
   },
   {
     id: "bca",
     title: "BCA",
     period: "2023 — 2026",
-    description: "Completed — built a foundation in programming, databases and web development.",
+    description:
+      "Completed — built a foundation in programming, databases and web development.",
   },
   {
     id: "school",
     title: "Schooling (12th & 10th)",
     period: "Up to 2023",
-    description: "Completed schooling — where my interest in computers and problem solving began.",
+    description:
+      "Completed schooling — where my interest in computers and problem solving began.",
   },
 ];

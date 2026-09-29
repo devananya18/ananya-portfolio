@@ -55,7 +55,7 @@ export const projects: Project[] = [
     tech: ["Python", "Flask", "SQLite", "Jinja2", "HTML/CSS"],
     gradient: "from-peach-300 via-gold-300 to-rose-400",
     emoji: "🛒",
-    demoUrl: "multivendor-shop-eta.vercel.app",
+    demoUrl: "https://multivendor-shop-eta.vercel.app",
     detailsUrl: "https://github.com/devananya18/multivendor-shop",
   },
 ];

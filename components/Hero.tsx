@@ -131,7 +131,7 @@ export default function Hero() {
                 className="h-full w-full"
               >
                 <img
-                  src="/photo/photo.jpeg"
+                  src="public/photo/photo.jpeg"
                   alt="Ananya Gupta"
                   onError={(e) => { e.currentTarget.style.display = "none"; }}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
